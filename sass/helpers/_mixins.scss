@@ -1,0 +1,101 @@
+@use "../helpers/varibles" as *;
+
+@mixin list-reset {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@mixin circle($diminsions){
+    border-radius: 50%;
+    width: $diminsions ;
+    height: $diminsions;
+}
+
+@mixin  center-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin overlay($color , $opacity){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color , $opacity);
+}
+
+
+@mixin kFrom($name-animation){
+    @-webkit-keyframes #{$name-animation} {
+        @content;
+    }
+    @keyframes #{$name-animation} {
+        @content;
+    }
+}
+
+@mixin breakPoints($points){
+    @if $points == mobile {
+        @media #{$maxMobile} {
+            @content;
+        }
+    }@else if $points == small {
+        @media #{$minSmall} and #{$maxSmall} {
+            @content;
+        }
+    }@else if $points == medium {
+        @media #{$minMediem} and #{$maxMediem} {
+            @content;
+        }
+    }@else if $points == large {
+        @media #{$minLarge}  {
+            @content;
+        }
+    }
+}
+
+
+
+
+
+@mixin trengle($size , $color , $direction){
+    content: '';
+    position: absolute;
+    border: $size solid transparent;
+    #{$direction}: -($size * 2);
+    @include center-box;
+
+    @if $direction == "top"{
+        border-bottom-color: $color;
+    }@else if $direction == "right"{
+        border-left-color: $color;
+    }@else if $direction == "bottom"{
+        border-top-color: $color;
+    }@else if $direction == "left"{
+        border-right-color: $color;
+    }@else{
+        @error "This Direction #{$direction} is Not Valid"
+    }
+}
+
+
+
+
+
+@mixin  prifixer($prop , $value , $prifixes:()){
+    @each $prifix in $prifixes{
+        #{'-' + $prifix +'-' + $prop }:$value ;
+    }
+    #{$prop}:$value ;
+}
+
+
+
+@mixin transition($pram...){
+    transition: $pram;
+}
+

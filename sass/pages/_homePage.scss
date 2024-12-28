@@ -1,0 +1,161 @@
+@use "../helpers/varibles" as *;
+@use "../helpers/mixins" as *;
+
+/* Start Slider */
+.slider{
+    blockquote{
+        max-width: 80%;
+        font-size: 19px;
+        font-style: italic;
+        color: #5e5e5e;
+        margin: 30px auto ;
+        line-height: 1.7;
+    }
+    .landing{
+        background-image: url('../imgs/imageSlider-1.jpg');
+        height: 500px;
+        background-size: cover;
+        position: relative;
+        color: $mainColor;
+        .fa-angle-double-left,
+        .fa-angle-double-right{
+            position: absolute;
+            top: 50%;
+            @include prifixer(transform , translateY(-50%) , webKit Moz O);
+            cursor: pointer;
+        }
+        
+        .fa-angle-double-left{
+            left: 20px;
+        }
+        .fa-angle-double-right{
+            right: 20px;
+        }
+        
+    }
+    .list{
+        margin: 50px 0 20px;
+        li{
+            width: 23px;
+            height: 23px;
+            border-radius: 50%;
+            border: 2px solid $mainColor;
+            cursor: pointer;
+            @include prifixer(transition , .5s , webKit Moz O);
+            &.active{
+                background-color:$mainColor ;
+            }
+        }
+    }
+}
+/* End Slider */
+/* Start Services */
+.services{
+    .service-box{
+        .service-title{
+            color: #666;
+            i{
+                font-size: 35px;
+                position: relative;
+                top: 2px;
+            }
+        }
+        .service-Desc{
+            color: #777;
+            line-height: 1.7;
+        }
+        .link{
+            color:$mainColor ;
+        }
+        @include breakPoints(mobile){
+            text-align: center;
+        }
+    }
+}
+/* End Services */
+/* Start players */
+.players{
+    .players-box{
+        .players-title{
+            color: #666;
+            font-size: 20px;
+            span{
+                font-weight: bold;
+                [dir="rtl"] &{
+                    display: inline-block;
+                }
+            }
+        }
+        .players-Desc{
+            color: #777;
+            line-height: 1.7;
+        }
+        .link{
+            color:$mainColor ;
+        }
+    }
+}
+/* End players */
+/* Start portfolio */
+.portfolio{
+    .links{
+        & .active{
+            background-color: $mainColor;
+            color: white;
+        }
+        li{
+            padding: .5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            &:not(.active):hover{
+                color: $mainColor;
+            }
+        }
+    }
+    .box{
+        @media #{$maxMobile} {
+            flex-basis: 80%;
+        }
+        @media #{$minTab } {
+            flex-basis: 45%;
+        }
+        @media #{$minSmall } {
+            flex-basis: 31%;
+        }
+        @media #{$minLarge} {
+            flex-basis: 23%;
+        }
+        overflow: hidden;
+        position: relative;
+        &::before{
+            content: attr(data-work);
+            @include overlay($mainColor , .6);
+            @include center-box;
+            font-weight: bold;
+            color: white;
+            font-size: 1.5rem;
+            top:  -100%;
+            z-index: 3;
+            @include prifixer(transition, .3s , webKit Moz O );
+        }
+        &:hover::before{
+            top: 0;
+        }
+        &:hover img{
+            transform: scale(1.2) rotate(5deg);
+            @include prifixer(transition, .3s , webKit Moz O );
+        }
+    }
+}
+/* End portfolio */
+
+
+
+
+
+
+
+
+
+
+

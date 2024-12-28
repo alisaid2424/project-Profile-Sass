@@ -1,0 +1,61 @@
+@use "../helpers/varibles" as *;
+
+
+/* Start Header */
+.header{
+    border-bottom: 1px solid $grayColor;
+    .logo{
+        text-align: center;
+        p{
+            font-style: italic;
+            letter-spacing: 2px;
+        }
+    }
+    .navbar-toggler{
+        background-color:$mainColor ;
+        box-shadow: none;
+        i{
+            color: white;
+        }
+    }
+    .links{
+        background-color: $mainColor;
+        li{
+            font-size: 18px;
+            padding: 20px 15px;
+            a{
+                color: white;
+                &:hover,
+                &.active{
+                    color: #ddd;
+                }
+            }
+        }
+    }
+}
+/* End Header */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

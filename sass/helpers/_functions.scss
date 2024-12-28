@@ -1,0 +1,41 @@
+
+@function half($size){
+    @return $size / 2;
+}
+
+@function calculation($sizes...){
+    $total:0;
+    @each $size in $sizes{
+        $total:$total + $size;
+    }
+    @return $total;
+}
+
+
+@function double($size ,$nums ) {
+    @return $size * $nums;
+}
+
+
+@function get-total($nums...){
+    $total : 0;
+    @each $num in $nums{
+        $total :$total + $num;
+    }
+    @return $total;
+}
+
+
+@function  calcFont($size){
+    $font : 50px ;
+    $result: 0;
+
+    @if $size > $font{
+        $result: 10px;
+    }@else{
+        $result: 100px;
+    }
+
+    @return $result;
+}
+

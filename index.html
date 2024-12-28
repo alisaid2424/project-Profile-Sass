@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Sass one</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/homePage.css">
+</head>
+<body>
+    <!-- Start header -->
+        <nav class="navbar navbar-expand-lg header py-2 ">
+            <div class="container">
+                <a class="navbar-brand logo " href="#">
+                    <h1 class="fw-bold text-uppercase mb-0 pt-2">Composition</h1>
+                    <p>Free Psd Wibsite Template</p>
+                </a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="main">
+                    <ul class="links navbar-nav rounded-3 ">
+                        <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="#Portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="#About">About</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="#Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <!-- End header -->
+    <!-- Start Slider -->
+        <div class="slider" id="Home">
+            <div class="container">
+                <blockquote class="text-center fw-bold">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cumque a possimus, itaque quasi ullam perspiciatis rem voluptatibus exercitationem sed est quisquam consequuntur quas sapiente porro vitae, doloremque Mollitia"</blockquote>
+
+                <div class="landing">
+                    <i class="fas fa-angle-double-left fa-2x"></i>
+                    <i class="fas fa-angle-double-right fa-2x"></i>
+                </div>
+                <ul class="list list-unstyled d-flex justify-content-center gap-4">
+                    <li class="active" data-index="1"></li>
+                    <li data-index="2"></li>
+                    <li data-index="3"></li>
+                    <li data-index="4"></li>
+                    <li data-index="5"></li>
+                </ul>
+            </div>
+        </div>
+    <!-- End Slider -->
+    <!-- Start Services -->
+        <div class="services " id="services">
+            <div class="container pt-5">
+                <div class="head-with-line">
+                    <h2>our services</h2>
+                </div>
+
+                <div class="row py-5 g-5">
+                    <div class="col-lg-4">
+                        <div class="service-box ">
+                            <h3 class="service-title"><i class="fas fa-home d-block mb-3 d-md-inline-block mb-md-0"></i> Lorem title</h3>
+                            <p class="service-Desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eius veritatis porro in ut sed autem ducimus molestias natus iste dolorem fuga, perspiciatis quod necessitatibus non temporibus nihil molestiae aliquid.</p>
+                            <a class="link" href="#">Read More ..</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="service-box ">
+                            <h3 class="service-title"><i class="fas fa-users d-block mb-3 d-md-inline-block mb-md-0"></i> Lorem title</h3>
+                            <p class="service-Desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eius veritatis porro in ut sed autem ducimus molestias natus iste dolorem fuga, perspiciatis quod necessitatibus non temporibus nihil molestiae aliquid.</p>
+                            <a class="link" href="#">Read More ..</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="service-box ">
+                            <h3 class="service-title"><i class="fas fa-gear d-block mb-3 d-md-inline-block mb-md-0"></i> Lorem title</h3>
+                            <p class="service-Desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eius veritatis porro in ut sed autem ducimus molestias natus iste dolorem fuga, perspiciatis quod necessitatibus non temporibus nihil molestiae aliquid.</p>
+                            <a class="link" href="#">Read More ..</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    <!-- End Services -->
+    <!-- Start portfolio -->
+    <div class="portfolio" id="Portfolio">
+        <div class="container">
+            <div class="head-with-line">
+                <h2>Our Works</h2>
+            </div>
+
+            <ul class="links list-unstyled d-flex justify-content-center mb-5 gap-2">
+                <li class="active" data-cat=".all">All</li>
+                <li data-cat=".design">Design</li>
+                <li data-cat=".code">Code</li>
+                <li data-cat=".phone">Phone</li>
+                <li data-cat=".app">App</li>
+            </ul>
+
+            <div  class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
+                <div class="box all app" data-work="Application">
+                    <img class="img-fluid " src="imgs/work-01.jpg" alt="" >
+                </div>
+                <div class="box all design" data-work="Design">
+                    <img class="img-fluid " src="imgs/work-02.jpg" alt="" >
+                </div>
+                <div class="box all phone" data-work="Phone">
+                    <img class="img-fluid" src="imgs/work-03.jpg" alt="" >
+                </div>
+                <div class="box all code " data-work="Code">
+                    <img class="img-fluid " src="imgs/work-05.jpg" alt="" >
+                </div>
+                <div class="box all phone" data-work="Phone">
+                    <img class="img-fluid " src="imgs/work-03.jpg" alt="" >
+                </div>
+                <div class="box all design " data-work="Design">
+                    <img class="img-fluid " src="imgs/work-06.jpg" alt="" >
+                </div>
+                <div class="box all app " data-work="Application">
+                    <img class="img-fluid " src="imgs/work-07.jpg" alt="" >
+                </div>
+                <div class="box  all code" data-work="Code">
+                    <img class="img-fluid " src="imgs/work-08.jpg" alt="" >
+                </div>
+                <div class="box all app " data-work="Application">
+                    <img class="img-fluid " src="imgs/work-04.jpg" alt="" >
+                </div>
+                <div class="box all design" data-work="Design">
+                    <img class="img-fluid " src="imgs/work-02.jpg" alt="" >
+                </div>
+                <div class="box all phone" data-work="Phone">
+                    <img class="img-fluid " src="imgs/work-03.jpg" alt="" >
+                </div>
+                <div class="box  all code" data-work="Code">
+                    <img class="img-fluid " src="imgs/work-05.jpg" alt="" >
+                </div>
+            </div>
+            <div class="text-center my-5">
+                <a class="btn  rounded-3 main-button text-uppercase fw-bold" href="#">Show More</a>
+            </div>
+        </div>
+    </div>
+    <!-- End portfolio -->
+    <!-- Start players -->
+    <div class="players" id="About">
+        <div class="container py-4">
+            <div class="head-with-line">
+                <h2>our players</h2>
+            </div>
+
+            <div class="row py-5 g-4">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="players-box ">
+                        <img class="img-fluid mb-4" src="imgs/team-1.png" alt="">
+                        <h3 class="players-title"> <span>Name:</span> Omar Ali</h3>
+                        <p class="players-Desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eius veritatis porro in ut sed autem ducimus molestias natus iste dolorem fuga, perspiciatis quod necessitatibus non temporibus nihil molestiae aliquid.</p>
+                        <a class="link" href="#">Read More ..</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="players-box ">
+                        <img class="img-fluid mb-4" src="imgs/team-2.png" alt="">
+                        <h3 class="players-title"> <span>Name:</span> Mohamed Salah</h3>
+                        <p class="players-Desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eius veritatis porro in ut sed autem ducimus molestias natus iste dolorem fuga, perspiciatis quod necessitatibus non temporibus nihil molestiae aliquid.</p>
+                        <a class="link" href="#">Read More ..</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="players-box ">
+                        <img class="img-fluid mb-4" src="imgs/team-3.png" alt="">
+                        <h3 class="players-title"> <span>Name:</span> Mohamed Said</h3>
+                        <p class="players-Desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eius veritatis porro in ut sed autem ducimus molestias natus iste dolorem fuga, perspiciatis quod necessitatibus non temporibus nihil molestiae aliquid.</p>
+                        <a class="link" href="#">Read More ..</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="players-box ">
+                        <img class="img-fluid mb-4" src="imgs/team-1.png" alt="">
+                        <h3 class="players-title"> <span>Name:</span> Omar Ali</h3>
+                        <p class="players-Desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eius veritatis porro in ut sed autem ducimus molestias natus iste dolorem fuga, perspiciatis quod necessitatibus non temporibus nihil molestiae aliquid.</p>
+                        <a class="link" href="#">Read More ..</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End players -->
+    <!-- Start Footer -->
+    <div class="footer pt-5 mt-3" id="Contact">
+        <div class="container">
+            <div class="row g-5 py-4">
+                <div class="col-md-12 col-lg-6">
+                    <div class="gallery  ">
+                        <h3 class="title-section">Latest From Blog</h3>
+                        <div class="content-box mb-3  ">
+                            <img class="img-fluid" src="imgs/footer-1.jpg" alt="">
+                            <div class="text">
+                                <h4>Lorem Testing Title</h4>
+                                <p >Lorem, ipsum dolor  Natus alias eos, consectetur assumenda libero vel dolores ipsam enim iure laborum rerum culpa corporis aperiam asperiores</p>
+                            </div>
+                        </div>
+                        <div class="content-box ">
+                            <img class="img-fluid" src="imgs/footer-2.jpg" alt="">
+                            <div class="text">
+                                <h4>Lorem Testing Title</h4>
+                                <p>Lorem, ipsum dolor Natus alias eos, consectetur assumenda libero vel dolores ipsam enim iure laborum rerum culpa corporis aperiam asperiores</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="info ">
+                        <h3 class="title-section">Company Details</h3>
+                        <ul class="list-unstyled lh-lg">
+                            <li>Company Name</li>
+                            <li>Street Name & Number</li>
+                            <li>Twen</li>
+                            <li>Postal Code</li>
+                            <li>Tel: 01212121213</li>
+                            <li>Fax: 1245783262</li>
+                            <li>Email: <span>aliasy@gmail.com</span></li>
+                        </ul>
+                        <h4 class="working mb-0 fw-bold">Working Hours</h4>
+                        <p>Monday - Friday 08:00 - 17:00 </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact">
+                        <h3 class="title-section">Contact US</h3>
+                        <form action="">
+                            <input class="input" type="text" placeholder="Name">
+                            <input class="input" type="email" placeholder="Email">
+                            <textarea class="input" placeholder="Message"></textarea>
+                            <input class="main-button" type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright d-flex justify-content-between align-items-center flex-column flex-sm-row py-4">
+                <div class="text">All Right Recerved @ <span id="fullYear">2022</span> </div>
+                <div class="author">Designed By OS Template</div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer -->
+
+    <a class="position-fixed rounded-circle text-center btn-backUp" href="#" >
+        <i class="fas fa-angle-double-up"></i>
+    </a>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/all.min.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+@use "../helpers/varibles" as *;
+@use "../helpers/mixins" as *;
+
+
+/* Start Footer */
+.footer{
+    background-color: #e2e2e2;
+    .gallery{
+        .content-box{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            @include breakPoints(mobile){
+                flex-direction: column;
+            }
+            img{
+                width: 150px;
+                height: 100px;
+            }
+            .text{
+                h4{
+                    color: #444;
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin:0;
+                    padding-top: 10px;
+                }
+                p{
+                    color: #888;
+                    margin-top: 5px;
+                    line-height: 1.5;
+                }
+            }
+        }
+        
+    } 
+    .info{
+        ul{
+            li{
+                color: #888;
+                span{
+                    color: $mainColor;
+                }
+            }
+        }
+        h4{
+            color: #888;
+        }
+        p{
+            margin-top: 8px;
+            color: #888;
+        }
+    }
+    .contact{
+        .input{
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #c9c9c9;
+            outline: none;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+        textarea{
+            height: 140px;
+        }
+    }
+    .title-section{
+        color: #444;
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+    .gallery , .info , .contact .title-section{
+        @include breakPoints(mobile){
+            text-align: center;
+        }
+    }
+    .copyright{
+        border-top: 1px solid #c5c5c5;
+    }
+}
+/* End Footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
